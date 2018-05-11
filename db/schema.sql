@@ -1,4 +1,4 @@
-CREATE DATABASE burgers_db;
+
 USE burgers_db;
 
 CREATE TABLE burgers (
@@ -7,3 +7,10 @@ CREATE TABLE burgers (
     devoured BOOLEAN,
     PRIMARY KEY(item_id)
 );
+
+INSERT INTO burgers (burger_name, devoured)
+VALUES  ('Double Cheeseburger', TRUE),
+        ('Jr. Bacon Cheeseburger', TRUE),
+        ('Turkey Burger', TRUE),
+        ('Bacon Bleu Burger', TRUE),
+        ('Crispy Chicken Sandwich', TRUE);
